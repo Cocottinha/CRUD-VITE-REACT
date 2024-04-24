@@ -72,7 +72,7 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
                   type="text"
                   value={activityType}
                   onChange={(e) => setActivityType(e.target.value)}
-                />              
+                />
               </Box>
               <Box>
                 <FormLabel>Quantidade de Horas</FormLabel>
