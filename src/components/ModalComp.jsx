@@ -95,7 +95,7 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
             </FormControl>
           </ModalBody>
 
-          <ModalFooter justifyContent="start">
+          <ModalFooter justifyContent="space-between">
             <Button colorScheme="green" mr={3} onClick={handleSave}>
               SALVAR
             </Button>
