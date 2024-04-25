@@ -50,7 +50,7 @@ const App = () => {
       fontFamily="Arial"
     >
       <Box maxW={2000} w="100%" h="100vh" py={10} px={2}>
-        <Button colorScheme="gray" color="black" onClick={() => [setDataEdit({}), onOpen()]}>
+        <Button colorScheme="gray" color="black" _hover={{ bg: "red.100" }} onClick={() => [setDataEdit({}), onOpen()]}>
           CADASTRAR HORA
         </Button>
 

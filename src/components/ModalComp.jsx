@@ -60,6 +60,7 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
                   value={dimension}
                   onChange={(e) => setDimension(e.target.value)}
                 >
+                  <option value="Nenhuma">Nenhuma</option>
                   <option value="Ensino">Ensino</option>
                   <option value="Pesquisa">Pesquisa</option>
                   <option value="Extensão">Extensão</option>
