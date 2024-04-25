@@ -53,7 +53,6 @@ const App = () => {
         <Button colorScheme="gray" color="black" _hover={{ bg: "red.100" }} onClick={() => [setDataEdit({}), onOpen()]}>
           CADASTRAR HORA
         </Button>
-
         <Box overflowY="auto" height="100%">
           <Table mt="6">
             <Thead>
