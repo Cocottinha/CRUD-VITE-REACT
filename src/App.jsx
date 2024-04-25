@@ -83,7 +83,8 @@ const App = () => {
                   <Td maxW={isMobile ? 1 : 500}>{hoursQuantity}</Td>
                   <Td p={0}>
                     <EditIcon
-                      fontSize={20}
+                      fontSize={40}
+                      padding={2}
                       onClick={() => [
                         setDataEdit({dimension, activityType, hoursQuantity, index }),
                         onOpen(),
@@ -92,7 +93,8 @@ const App = () => {
                   </Td>
                   <Td p={0}>
                     <DeleteIcon
-                      fontSize={20}
+                      fontSize={40}
+                      padding={2}
                       onClick={() => handleRemove(id)}
                     />
                   </Td>
