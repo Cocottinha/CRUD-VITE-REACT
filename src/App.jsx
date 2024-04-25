@@ -85,7 +85,7 @@ const App = () => {
                     <EditIcon
                       fontSize={20}
                       onClick={() => [
-                        setDataEdit({ dimension, activityType, hoursQuantity, index }),
+                        setDataEdit({dimension, activityType, hoursQuantity, index }),
                         onOpen(),
                       ]}
                     />

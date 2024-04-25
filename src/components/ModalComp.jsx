@@ -20,11 +20,20 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
   const [activityType, setActivityType] = useState(dataEdit.activityType || "");
   const [hoursQuantity, setHoursQuantity] = useState(dataEdit.hoursQuantity || "");
 
+  const arr = data.map(dt => dt.id)
+  var largest = arr[0];
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  
   const handleSave = () => {
     if (!dimension || !activityType || !hoursQuantity) return;
-
+    
     const newDataItem = {
-      id: data.length + 1, // Generate an incremental ID
+      id: largest + 1,
       dimension,
       activityType,
       hoursQuantity,
@@ -33,7 +42,7 @@ const ModalComp = ({ data, setData, dataEdit, isOpen, onClose }) => {
     let newDataArray;
     if (Object.keys(dataEdit).length) {
       data[dataEdit.index] = newDataItem;
-      newDataArray = data.slice(); // Clone the array
+      newDataArray = data.slice();
     } else {
       newDataArray = [...(data ? data : []), newDataItem];
     }
